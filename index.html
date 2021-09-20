@@ -1,0 +1,179 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>CV</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="head">
+      <figure class="photo">
+        <img src="assets/avatar.png" alt="photo">
+      </figure>
+      <div class="page-title">
+        <nav class="navigation">
+          <ul class="navigation-menu">
+            <li class="navigation-link">
+              <a href="#background">my background</a>
+            </li>
+            <li class="navigation-link">
+              <a href="#contacts">contacts</a>
+            </li>
+            <li class="navigation-link">
+              <a href="#skills">skills</a>
+            </li>
+            <li class="navigation-link">
+              <a href="#language">language</a>
+            </li>
+            <li class="navigation-link">
+              <a href="#education">education</a>
+            </li>
+            <li class="navigation-link">
+              <a href="#experience">experience</a>
+            </li>
+            <li class="navigation-link">
+              <a href="#academic-project">academic project</a>
+            </li>
+            <li class="navigation-link">
+              <a href="#code-example">code example</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <section class="name">
+          <h1>Aliaksandr Petrov</h1>
+          <h2>Junior Frontend Developer</h2>
+        </section>
+      </div>  
+    </header>
+    <main class="fantasies">
+      <article class="background" id="background">
+        <h3>my background</h3>
+        <p>I'm an enthusiastic and detail-oriented Frontend Software Engineer seeking an entry-level position with
+        Company to use my skills in coding,	troubleshooting complex problems, and assisting in the timely completion
+        of projects.</p>
+      </article>
+      <div class="left-main-section">   
+        <article class="contacts" id="contacts">
+          <h3>contact</h3>
+          <ul>
+            <li>allexander@inbox.ru</li>
+            <li>+79051001022</li>
+          </ul>
+          <address> Gomel, Belarus</address>
+        </article>                         
+        <article class="skills" id="skills">
+          <h3>skills</h3>
+            <ul>
+              <li>Javascript/ES5/ES6</li>
+              <li>Angular + NGRX</li>
+              <li>HTML/CSS3</li>
+              <li>Node.JS/Express/KOA</li>
+              <li>Vue</li>
+              <li>Bootstrap/JQUERY</li>
+            </ul> 
+        </article>  
+        <article class="language" id="language">
+          <h3>language</h3>
+          <table>
+            <tr>
+              <td>Russian -</td>
+              <td>Native </td>
+            </tr>
+            <tr>
+              <td>English -</td>
+              <td>Elementary</td>
+            </tr>
+          </table> 
+        </article>  
+        <article class="education" id="education">
+          <h3>education</h3>
+          <p>
+            <span class="subtitle">IN COMPUTER SCIENCE <br>University of Texas - Dallas, TX</span>
+            <span class="date">2017 - Present</span>
+            <span class="subtitle">B.S. in Information Technology<br>CUNY Queens College - Flushing, NY</span>
+            <span class="date">July 2010 - May 2014</span>
+          </p>
+        </article>
+      </div>
+      <div class="right-main-section">  
+        <article class="experience" id="experience">
+          <h3>experience</h3>
+          <p>
+            <span class="subtitle">Frontend Developer Intern | ThinkEmpire</span>
+            <span class="date">September 2019 New York, NY</span>
+            Accomplished the development of the company's German website, using Angular, Typescript, NGRX and
+            ngx-translate. Automated system deployment with Docker, Nginx on Amazon Cloud.</p>
+          <p>
+            <span class="subtitle">Frontend Engineer Intern | German Association for Science and Technology USA</span>
+            <span class="date">2019 - August 2019 Manhattan, NY</span> 
+            Cut the company's site web loading time by 40% by optimizing the SPA bundle size, leading to better
+            user experience. Expanded reach of the website by building RESTful API to support user replies and
+            notifications.
+          </p>
+        </article>
+        <article class="academic-project" id="academic-project">
+          <h3>academic project</h3>
+          <p>
+            <span class="subtitle">Job Searching Web Service, MEAN Stack</span>
+            <span class="date">July 2018 - October 2018</span>
+            Implemented the Job Searching Web Service with NodeJS, MongoDB, Angular 5, NGRX and Bootstrap. Integrated 
+            the user authentication with Github Oauth2 apps to support third-party accounts login.
+          </p>
+          <p>
+            <span class="subtitle">TensorFlow based Image Recognition and Translation System.</span>
+            <span class="date">February 2018 - June 2018</span>
+            Developed the system with NodeJS, TensorFlow, Scikit-learn for image-to-image translation. Preprocessed 
+            the images with Scikit-learn to generate training data, used Numpy, Scipy for data processing.
+            Implemented a conditional GAN with TensorFlow and trained with GPU on Google Cloud Platform, achieved
+            99% test accuracy.
+          </p>
+        </article>
+        <div class="code-example" id="code-example">
+          <h3>code example</h3>
+          <pre>
+            <code>
+function union(a, b) {
+  let unionSet = new Set(a);
+  for (let i of b) {
+    unionSet.add(i);
+  }
+  return unionSet
+}
+            </code>
+          </pre>
+        </div>
+      </div>        
+    </main>
+    <footer class="footer">
+      <figure class="logo">
+        <a href="https://rs.school/js/"><img src="assets/rs_school_js.svg" alt="RS School" class="logo"></a>
+      </figure>
+      <div class="year">Actual on 2021</div> 
+      <ul class="social-share">
+        <li class="facebook"><a href="https://www.facebook.com/"><img src="assets/facebook.svg" title="Facebook" alt="Facebook"></a></li>
+        <li class="linkedin"><a href="https://www.linkedin.com"><img src="assets/linkedin.svg" title="Linkedin" alt="Linkedin"></a></li>
+        <li class="telegram"><a href="https://web.telegram.org/"><img src="assets/telegram.svg" title="Telegram" alt="Telegram"></a></li>
+        <li class="github"><a href="https://github.com/Allexanderc"><img src="assets/github.svg" title="GitHub" alt="GitHub"></a></li>
+      </ul>
+    </footer>    
+  </div>
+</body>
+</html>
