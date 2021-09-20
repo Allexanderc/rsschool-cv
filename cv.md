@@ -2,7 +2,7 @@
 # Junior Frontend Developer
 
 allexander@inbox.ru \
-+79051001022 \
++7(905)100-10-22 \
 
 Gomel' Belarus
 
